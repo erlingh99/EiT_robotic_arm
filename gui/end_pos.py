@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.patheffects as PathEffects
-from arm_sim.transform import *
+from model.transform import *
 
 class EndPosition:
     drawn = False

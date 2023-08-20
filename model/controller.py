@@ -2,8 +2,8 @@ import numpy as np
 import threading
 import time
 
-from arm_sim.optimization_controller import Optimization_controller
-from arm_sim.position_controller import Position_controller
+from model.optimization_controller import Optimization_controller
+from model.position_controller import Position_controller
 
 
 class Controller:

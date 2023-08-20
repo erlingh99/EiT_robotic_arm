@@ -1,8 +1,14 @@
 from inputs import get_gamepad
 import math
 import threading
+import numpy as np
 
 class XboxController:
+    inc = 0.02  # increments for movement on button press
+    inc_a = 5*np.pi/180  # angular increments
+    inc_analog = 0.01 #increments for joystick
+
+
     MAX_TRIG_VAL = math.pow(2, 8)
     MAX_JOY_VAL = math.pow(2, 15)
     RightTrigger = 0

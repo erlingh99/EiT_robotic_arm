@@ -1258,7 +1258,7 @@
                                 }</string>
                         </property>
                         <property name="text">
-                            <string>z</string>
+                            <string> z</string>
                         </property>
                     </widget>
                     <widget class="QToolButton" name="z_cc">

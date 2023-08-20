@@ -1,4 +1,4 @@
-from init_robot import EiT_arm
+from arm import EiT_arm
 import matplotlib.pyplot as plt
 import numpy as np
 import itertools

@@ -61,8 +61,11 @@ class Driver:
 
     def _sendData(self):
         while True:
-            controller_state = self.xbxCtrl.read()
-            claw = np.interp(controller_state[5], [0, 1], [10, 73])
+            if self.xbxCtrl is not None:
+                controller_state = self.xbxCtrl.read()
+                claw = np.interp(controller_state[5], [0, 1], [10, 73])
+            else:
+                claw = 0 #no claw control
 
             if self.controller.enabled: #use control signal in qd
                 self.arm.qr = self.arm.q + self.dt*self.arm.qd #euler integrate next reference position for arm                
